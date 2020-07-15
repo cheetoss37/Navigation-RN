@@ -1,22 +1,22 @@
 import React from 'react';
-import { Text, View, StyleSheet, TouchableOpacity, ImageBackground, Image } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
 
 const image = require('../../assets/background.jpg')
 const icon = require('../../assets/logout-icon.jpg')
-export function Forgetpass({navigation}) {
+export function Registersuccess({navigation}) {
   return (
     <View style={styles.container}>
     <ImageBackground source={image} style={styles.image} imageStyle={{opacity:0.5}}>
         <View>
+        </View>
+        <View style={styles.body}> 
+            <Text style={styles.bigText}>Register Success</Text>
             <TouchableOpacity 
             onPress={()=> {
                 navigation.navigate('Login')
             }}>
-                <Image source={icon} style={styles.icon}/>
+                <Text style={{fontWeight: 'bold', color: 'red'}}>Login</Text>
             </TouchableOpacity>
-        </View>
-        <View style={styles.body}> 
-            <Text style={styles.bigText}>Forgetpass Screen</Text>
         </View>
     </ImageBackground>
     </View>
@@ -46,10 +46,4 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#000',
     },
-    icon: {
-        marginTop: 5,
-        marginLeft: 5,
-        width: 20,
-        height: 20,
-    }
 })

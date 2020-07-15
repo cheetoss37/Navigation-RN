@@ -59,7 +59,10 @@ export function Register({navigation}) {
                 </View>
             </View>
             <View style={styles.submit}>
-                <TouchableOpacity style={styles.submittext} >
+                <TouchableOpacity style={styles.submittext} 
+                  onPress={() => {
+                    navigation.navigate('Registersuccess')
+                  }}>
                     <Text style={styles.btntext}>￫</Text>
                 </TouchableOpacity>
             </View>

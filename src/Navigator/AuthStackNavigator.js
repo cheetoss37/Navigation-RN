@@ -4,6 +4,7 @@ import {Login} from '../Component/Login/Login'
 import {Home} from '../Component/Home/Home'
 import {Register} from '../Component/Register/Register'
 import {Forgetpass} from '../Component/Forgetpass/Forgetpass'
+import {Registersuccess} from '../Component/Register-redirect/Registersuccess'
 
 const AuthStack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export function AuthStackNavigator() {
           <AuthStack.Screen name={"Home"} component={Home} />
           <AuthStack.Screen name={"Register"} component={Register} />
           <AuthStack.Screen name={"Forgetpass"} component={Forgetpass} />
+          <AuthStack.Screen name={"Registersuccess"} component={Registersuccess} />
         </AuthStack.Navigator>
     )
 }

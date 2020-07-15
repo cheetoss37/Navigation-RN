@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     marginLeft: '20%'
   },
   loginview: {
-      height: '60%', 
+      height: '55%', 
       width: '100%',
       backgroundColor: '#fff',
       position: 'absolute',
